@@ -1,0 +1,40 @@
+// HEADER STUFF
+
+
+header {
+    grid-template-columns: 54px auto;
+    // padding: 1rem $gutter;
+    h1 {
+       font-size: 2rem;
+       font-weight: $boldWeight;
+    }
+    // div#phone {
+    //     display: block;
+    //     justify-self: end;
+    //     a {
+    //         color: $primaryColor;
+    //         text-decoration: none;
+    //         font-weight: $normalWeight;
+    //         font-size: 1.5rem;
+    //         &:hover {color: $secondaryColor}
+    //     } // end anchor
+    // } //end phone
+} //end header
+
+// NAV STUFF HERE
+div#hamburger, div#closex {display: none;}
+nav {
+    //height: auto; //this overrides the 100vh from the small screen
+    ul {
+        display: flex;
+        justify-content: end;
+        border: none;
+        li {border: none;}
+    }
+} //end nav
+
+// STRUCTURE STUFF HERE
+div#headerWrapper{grid-row-start: 1;}
+div#navWrapper{grid-row-start: 2;}
+div#mainWrapper{grid-row-start: 3;}
+div#footerWrapper{grid-row-start: 4;}

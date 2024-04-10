@@ -1,0 +1,132 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+  }
+  
+  /*---- apply a natural box layout model to all elements -------*/
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+body {
+    display: grid;
+    height: 100%;
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    color: $fontColor;
+}
+
+// HEADER STUFF
+
+div#headerWrapper {
+    grid-row-start: 1;
+    color: $primaryColor;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 54px auto 44px;
+    align-items: center;
+    padding: 1rem $gutter; //.5rem 2vw
+    gap: 8px;
+    h1 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: $normalWeight;
+    }
+    // div#phone {display:none;}
+}
+
+// NAV STUFF
+div#navWrapper {
+    grid-row-start: 4;
+}
+
+div#hamburger a, div#closex a {
+    display: block;
+    padding: .8rem 2vw;
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+    text-align: right;
+} //end nav buttons
+
+div#closex a {margin-right: $gutter;}
+
+nav {
+    height: 100vh;
+    ul {
+        border-bottom: 1px solid green;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            border-top: 1px solid red;
+            a {
+                display: block;
+                color: #333;
+                padding: .9rem $gutter;
+                text-decoration: none;
+                text-align: right;
+                &:hover {color:$primaryColor;}
+            }// end anchors
+        } // end li
+        li.active a {background-color: lighten($primaryColor, 40%);}
+    } //end ul
+} //end nav
+
+// nav ul {list-style-type: none; margin: 0; padding: 0;}
+// nav {
+//     ul {
+//         list-style-type: none;
+//         padding: 0;
+//         margin: 0;
+//         display: flex;
+
+//         li {flex: 1;}
+//     }
+//     li.active a {
+//         background-color: $secondaryColor; //e88fe0 e88fd3
+//         color: black;
+//     } 
+//     a {
+//         display: block;
+//         padding: 0.75rem;
+//         color: white;
+//         text-align: center;
+//         text-decoration: none;
+//         font-weight: $boldWeight;
+//         &:hover {
+//             background-color: #e88fd3;
+//             color: black;
+//         }
+//     }
+// }
+
+
+// MAIN STUFF
+div#mainWrapper {
+    grid-row-start: 2;
+}
+
+
+// footer stuff start
+div#footerWrapper {
+    grid-row-start: 3;
+    background-color: $primaryColor;
+}
+
+footer {
+    padding: 0.5rem $gutter;
+    p {
+        margin: 0;
+        font-weight: $lightWeight;
+        text-align: center;
+        color: white;
+    }
+}
