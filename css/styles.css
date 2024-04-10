@@ -335,6 +335,7 @@ body {
 div#headerWrapper {
   grid-row-start: 1;
   color: #3d5ccd;
+  background-color: lightblue;
 }
 
 header {
