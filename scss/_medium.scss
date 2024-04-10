@@ -1,5 +1,6 @@
 // HEADER STUFF
 
+#headerWrapper {border-bottom: 1px solid #eee;}
 
 header {
     grid-template-columns: 54px auto;
@@ -24,7 +25,7 @@ header {
 // NAV STUFF HERE
 div#hamburger, div#closex {display: none;}
 nav {
-    height: auto; //this overrides the 100vh from the small screen
+   height: auto; //this overrides the 100vh from the small screen;
     ul {
         display: flex;
         justify-content: end;

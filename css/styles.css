@@ -413,6 +413,9 @@ footer p {
 }
 
 @media only screen and (min-width: 35rem) {
+  #headerWrapper {
+    border-bottom: 1px solid #eee;
+  }
   header {
     grid-template-columns: 54px auto;
   }
