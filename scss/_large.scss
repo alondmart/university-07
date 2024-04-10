@@ -2,3 +2,10 @@ header, nav, main {
     max-width: 60rem;
     margin: auto;
 }
+
+nav ul li a {
+    padding: .2rem 1rem;
+    border-radius: 10px;
+    margin: .5rem 0;
+    
+}

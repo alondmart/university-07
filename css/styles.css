@@ -423,6 +423,9 @@ footer p {
   div#hamburger, div#closex {
     display: none;
   }
+  nav {
+    height: auto;
+  }
   nav ul {
     display: flex;
     justify-content: end;
@@ -448,5 +451,10 @@ footer p {
   header, nav, main {
     max-width: 60rem;
     margin: auto;
+  }
+  nav ul li a {
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+    margin: 0.5rem 0;
   }
 }
