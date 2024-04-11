@@ -6,7 +6,7 @@ header {
     grid-template-columns: 54px auto;
     // padding: 1rem $gutter;
     h1 {
-       font-size: 2rem;
+       font-size: 1.8rem;
        font-weight: $boldWeight;
     }
     // div#phone {
@@ -31,9 +31,26 @@ nav {
         display: flex;
         justify-content: space-around;
         border: none;
+        padding: 1rem 0;
         li {border: none;}
     }
+    ul li a {
+        font-weight: $boldWeight;
+        color: #333;
+        border-radius: 20px;
+        padding: .6rem 1.2rem;
+        margin-left: .2rem;
+    }
+
 } //end nav
+
+
+
+
+
+
+
+
 
 // STRUCTURE STUFF HERE
 div#headerWrapper{grid-row-start: 1;}

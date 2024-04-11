@@ -326,7 +326,6 @@ html {
 
 body {
   display: grid;
-  height: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #333;
@@ -334,8 +333,8 @@ body {
 
 div#headerWrapper {
   grid-row-start: 1;
-  color: #3d5ccd;
-  background-color: lightblue;
+  color: black;
+  background-color: #EEEBD3;
 }
 
 header {
@@ -347,8 +346,8 @@ header {
 }
 header h1 {
   margin: 0;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 div#navWrapper {
@@ -372,13 +371,13 @@ nav {
   height: 100vh;
 }
 nav ul {
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid #EEEBD3;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 nav ul li {
-  border-top: 1px solid red;
+  border-top: 1px solid #EEEBD3;
 }
 nav ul li a {
   display: block;
@@ -386,21 +385,70 @@ nav ul li a {
   padding: 0.9rem 16px;
   text-decoration: none;
   text-align: right;
+  font-weight: 600;
 }
 nav ul li a:hover {
-  color: #3d5ccd;
+  color: #d14700;
+  background-color: #f7f5e9;
 }
 nav ul li.active a {
-  background-color: #dfe4f7;
+  background-color: #EEEBD3;
 }
 
 div#mainWrapper {
   grid-row-start: 2;
 }
 
+form.myForm {
+  margin: 1rem 16px;
+}
+form.myForm label {
+  display: block;
+  color: black;
+  padding-top: 0.2rem;
+  font-size: 0.8rem;
+}
+form.myForm h3 {
+  font-size: 1.2rem;
+  color: #d14700;
+  margin: 2rem 0 0.2rem 0;
+}
+form.myForm input[type=text], form.myForm input[type=tel], form.myForm input[type=number], form.myForm input[type=email], form.myForm input[type=password], form.myForm select, form.myForm input[type=date] {
+  display: block;
+  margin: 0.1rem 0 1rem 0;
+  border: solid 2px #b5b5b5;
+  border-radius: 5px;
+  border-bottom-width: 5px;
+  border-bottom-color: #b5b5b5;
+  font-size: 1rem;
+  color: black;
+  width: 280px;
+  padding: 0.5rem 16px;
+}
+form.myForm input:required {
+  background-color: #d8e6dd !important;
+}
+form.myForm input:required:valid {
+  border-bottom-color: green;
+}
+form.myForm input[type=submit] {
+  border: none;
+  background-color: #0b670b;
+  color: white;
+  border-radius: 40px;
+  padding: 0.75rem 1.2rem;
+  margin: 2rem 0;
+  width: 280px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  -webkit-appearance: none;
+  appearance: none;
+  text-align: center;
+}
+
 div#footerWrapper {
   grid-row-start: 3;
-  background-color: #3d5ccd;
+  background-color: #EEEBD3;
 }
 
 footer {
@@ -410,7 +458,7 @@ footer p {
   margin: 0;
   font-weight: 200;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 @media only screen and (min-width: 35rem) {
@@ -421,7 +469,7 @@ footer p {
     grid-template-columns: 54px auto;
   }
   header h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
   }
   div#hamburger, div#closex {
@@ -434,9 +482,17 @@ footer p {
     display: flex;
     justify-content: space-around;
     border: none;
+    padding: 1rem 0;
   }
   nav ul li {
     border: none;
+  }
+  nav ul li a {
+    font-weight: 600;
+    color: #333;
+    border-radius: 20px;
+    padding: 0.6rem 1.2rem;
+    margin-left: 0.2rem;
   }
   div#headerWrapper {
     grid-row-start: 1;
@@ -463,8 +519,7 @@ footer p {
     justify-content: end;
   }
   nav ul li a {
-    padding: 0.2rem 1rem;
-    border-radius: 10px;
+    padding: 0.4rem 1rem;
     margin: 0.5rem 0;
   }
 }

@@ -47,16 +47,44 @@
 
     <div id="mainWrapper">
         <main>
-            <h1>Form Title</h1>
+            <h2>Admission Application</h2>
+            <p>info here</p>
             <form method="get" action="thanks.html" class="myForm" autocomplete="on">
+                <h3>Contact Information</h3>
                 <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="Your First Name"></label>
-                <label>Last Name: <input type="text" name="lname" autocomplete="given-name" required title="Your First Name"></label>
-                <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="Your First Name"></label>
-                <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="Your First Name"></label>
-                <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="Your First Name"></label>
-                
-                
-                <input type="submit" value="complete form">
+                <label>Last Name: <input type="text" name="lname" autocomplete="family-name" required title="Your Last Name"></label>
+                <label>Email: <input type="email" name="email" autocomplete="email" required title="Email address"></label>
+                <label>Phone: <input type="tel" name="phone" autocomplete="tel" required title="Cell Phone Number" pattern="[0-9]"></label>
+                <label>Address: <input type="text" name="address" autocomplete="street-address"  title="Your street address"></label>
+                <label>City: <input type="text" name="city" autocomplete="address-level2"  title="City"></label>
+                <label>State: <input type="text" name="state" autocomplete="address-level1"  title="State"></label>
+                <label>Zip: <input type="number" name="zip" autocomplete="postal-code"  title="Zip code"></label>
+
+                <h3>Communication Preference</h3>
+                <label><input type="radio" name="communication" value="text"> Text message </label>
+                <label><input type="radio" name="communication" value="email"> Email</label>
+
+                <h3>Previous Education</h3>
+                <label> School Type
+                    <select name="school type">
+                        <option value="no selection">Please Select</option>
+                        <option value="private">Private High School</option>
+                        <option value="academy">Academy</option>
+                        <option value="public">Public High School</option>
+                    </select>
+                </label>
+                <label> High School Graduation Date <input type="date" name="graduation date"></label>
+
+                <h3>Education Completed</h3>
+                <label><input type="checkbox" name="Has diploma/ged" > High school diploma/GED</label>
+                <label><input type="checkbox" name="Has associates" > Associates Degree</label>
+                <label><input type="checkbox" name="Has some college"> Some college</label>
+
+                <h3>Account Information</h3>
+                <label>Username (5-10 letters) <input type="text" required minlength="5" maxlength="10" pattern="[A-Za-z] {}" title="Enter a username that is between 5-10 characters long. Must not contain numbers or symbols." ></label>
+                <label>Password (at least 6 characters long) <input type="password" name="password" minlength="6" required title="Enter a password that is at least 6 characters long." ></label>
+
+                <input type="submit" value="Complete My Application">
             </form>
 
         </main>

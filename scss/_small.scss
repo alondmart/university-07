@@ -15,7 +15,7 @@ html {
 
 body {
     display: grid;
-    height: 100%;
+    // height: 100%; this causes the elements to expand to fill up the screen height
     font-family: $defaultFont;
     font-weight: $normalWeight;
     color: $fontColor;
@@ -25,8 +25,8 @@ body {
 
 div#headerWrapper {
     grid-row-start: 1;
-    color: $primaryColor;
-    background-color: lightblue;
+    color: black;
+    background-color: $cream;
 }
 
 header {
@@ -37,8 +37,8 @@ header {
     gap: 8px;
     h1 {
         margin: 0;
-        font-size: 1.2rem;
-        font-weight: $normalWeight;
+        font-size: 1.4rem;
+        font-weight: $boldWeight;
     }
     // div#phone {display:none;}
 }
@@ -62,22 +62,30 @@ div#closex a {margin-right: $gutter;}
 nav {
     height: 100vh;
     ul {
-        border-bottom: 1px solid green;
+        border-bottom: 1px solid $cream;
         list-style-type: none;
         padding: 0;
         margin: 0;
         li {
-            border-top: 1px solid red;
+            border-top: 1px solid $cream;
             a {
                 display: block;
                 color: #333;
                 padding: .9rem $gutter;
                 text-decoration: none;
                 text-align: right;
-                &:hover {color:$primaryColor;}
+                font-weight: $boldWeight;
+                &:hover {
+                    color:$primaryColor;
+                    background-color: lighten($cream, 6%);
+                }
             }// end anchors
         } // end li
-        li.active a {background-color: lighten($primaryColor, 40%);}
+        li.active a {
+            // background-color: lighten($primaryColor, 40%);
+            background-color: $cream;
+        
+        }
     } //end ul
 } //end nav
 
@@ -88,10 +96,68 @@ div#mainWrapper {
 }
 
 
+// FORM STUFF
+form.myForm {
+    margin: 1rem $gutter;
+
+    label {
+        display: block;
+        color: black;
+        padding-top: .2rem;
+        font-size: .8rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+        color: $primaryColor;
+        margin: 2rem 0 .2rem 0;
+    }
+
+    input[type=text], input[type=tel], input[type=number], input[type=email], input[type=password], select, input[type=date] {
+        display: block;
+        margin: .1rem 0 1rem 0;
+        border: solid 2px #b5b5b5;
+        border-radius: 5px ; //top left, top right, bottom right, bottom left
+        border-bottom-width: 5px;
+        border-bottom-color: #b5b5b5;
+        font-size: 1rem;
+        color: black;
+        width: 280px;
+        padding: .5rem $gutter;
+    }
+
+    input:required {
+        background-color: lighten(rgb(94, 148, 114), 40%) !important;
+        // border-bottom-color: red;
+    }
+    // input:focus {border-bottom-color: $cream}
+    input:required:valid {border-bottom-color: green;}
+
+
+    input[type=submit] {
+        border: none;
+        background-color: $dgreen;
+        color: white;
+        border-radius: 40px;
+        padding: .75rem 1.2rem;
+        margin: 2rem 0;
+        width: 280px;
+        font-size: 1.2rem;
+        font-weight: $normalWeight;
+        -webkit-appearance: none;
+        appearance: none;
+        text-align: center;
+    }
+
+} //end myForm
+
+
+
+
+
 // footer stuff start
 div#footerWrapper {
     grid-row-start: 3;
-    background-color: $primaryColor;
+    background-color: $cream;
 }
 
 footer {
@@ -100,6 +166,6 @@ footer {
         margin: 0;
         font-weight: $lightWeight;
         text-align: center;
-        color: white;
+        color: black;
     }
 }
