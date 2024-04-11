@@ -399,7 +399,6 @@ nav ul li.active a {
   grid-row-start: 2;
 }
 
-<<<<<<< HEAD
 form.myForm {
   margin: 1rem 16px;
 }
@@ -447,10 +446,7 @@ form.myForm input[type=submit] {
   text-align: center;
 }
 
-div#footerWrapper {
-=======
 #footerWrapper {
->>>>>>> 002c1ce3798c216ef5bcc96efac93f72dd59b2be
   grid-row-start: 3;
   background-color: #EEEBD3;
 }
