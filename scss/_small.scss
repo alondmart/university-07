@@ -15,7 +15,11 @@ html {
 
 body {
     display: grid;
+<<<<<<< HEAD
     // height: 100%; this causes the elements to expand to fill up the screen height
+=======
+    // height: 100%;
+>>>>>>> 002c1ce3798c216ef5bcc96efac93f72dd59b2be
     font-family: $defaultFont;
     font-weight: $normalWeight;
     color: $fontColor;
@@ -23,7 +27,7 @@ body {
 
 // HEADER STUFF
 
-div#headerWrapper {
+#headerWrapper {
     grid-row-start: 1;
     color: black;
     background-color: $cream;
@@ -91,7 +95,7 @@ nav {
 
 
 // MAIN STUFF
-div#mainWrapper {
+#mainWrapper {
     grid-row-start: 2;
 }
 
@@ -155,7 +159,7 @@ form.myForm {
 
 
 // footer stuff start
-div#footerWrapper {
+#footerWrapper {
     grid-row-start: 3;
     background-color: $cream;
 }

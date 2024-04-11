@@ -331,7 +331,7 @@ body {
   color: #333;
 }
 
-div#headerWrapper {
+#headerWrapper {
   grid-row-start: 1;
   color: black;
   background-color: #EEEBD3;
@@ -395,10 +395,11 @@ nav ul li.active a {
   background-color: #EEEBD3;
 }
 
-div#mainWrapper {
+#mainWrapper {
   grid-row-start: 2;
 }
 
+<<<<<<< HEAD
 form.myForm {
   margin: 1rem 16px;
 }
@@ -447,6 +448,9 @@ form.myForm input[type=submit] {
 }
 
 div#footerWrapper {
+=======
+#footerWrapper {
+>>>>>>> 002c1ce3798c216ef5bcc96efac93f72dd59b2be
   grid-row-start: 3;
   background-color: #EEEBD3;
 }
@@ -505,9 +509,6 @@ footer p {
   }
   div#footerWrapper {
     grid-row-start: 4;
-  }
-  div#headerWrapper, div#navWrapper, div#mainWrapper, div#footerWrapper {
-    height: auto;
   }
 }
 @media only screen and (min-width: 60rem) {
