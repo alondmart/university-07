@@ -94,6 +94,11 @@ nav {
     grid-row-start: 2;
 }
 
+div.info {
+    padding: $gutter;
+    h2 {margin: 0 0 .5rem 0;}
+    p {margin: 0;}
+}
 
 // FORM STUFF
 form.myForm {

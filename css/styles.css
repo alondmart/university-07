@@ -399,6 +399,16 @@ nav ul li.active a {
   grid-row-start: 2;
 }
 
+div.info {
+  padding: 16px;
+}
+div.info h2 {
+  margin: 0 0 0.5rem 0;
+}
+div.info p {
+  margin: 0;
+}
+
 form.myForm {
   margin: 1rem 16px;
 }
