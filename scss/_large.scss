@@ -3,6 +3,10 @@ header, nav, main {
     margin: auto;
 }
 
+
+
+nav ul {justify-content: end;}
+
 nav ul li a {
     padding: .2rem 1rem;
     border-radius: 10px;

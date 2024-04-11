@@ -432,7 +432,7 @@ footer p {
   }
   nav ul {
     display: flex;
-    justify-content: end;
+    justify-content: space-around;
     border: none;
   }
   nav ul li {
@@ -455,6 +455,9 @@ footer p {
   header, nav, main {
     max-width: 60rem;
     margin: auto;
+  }
+  nav ul {
+    justify-content: end;
   }
   nav ul li a {
     padding: 0.2rem 1rem;
