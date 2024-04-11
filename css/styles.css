@@ -326,8 +326,8 @@ html {
 
 body {
   display: grid;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
   color: #333;
 }
 
@@ -347,7 +347,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 div#navWrapper {
@@ -385,7 +385,7 @@ nav ul li a {
   padding: 0.9rem 16px;
   text-decoration: none;
   text-align: right;
-  font-weight: 600;
+  font-weight: 700;
 }
 nav ul li a:hover {
   color: #d14700;
@@ -450,7 +450,7 @@ form.myForm input[type=submit] {
   margin: 2rem 0;
   width: 280px;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-appearance: none;
   appearance: none;
   text-align: center;
@@ -466,7 +466,7 @@ footer {
 }
 footer p {
   margin: 0;
-  font-weight: 200;
+  font-weight: 300;
   text-align: center;
   color: black;
 }
@@ -480,7 +480,7 @@ footer p {
   }
   header h1 {
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 700;
   }
   div#hamburger, div#closex {
     display: none;
@@ -498,7 +498,7 @@ footer p {
     border: none;
   }
   nav ul li a {
-    font-weight: 600;
+    font-weight: 700;
     color: #333;
     border-radius: 20px;
     padding: 0.6rem 1.2rem;
