@@ -326,13 +326,12 @@ html {
 
 body {
   display: grid;
-  height: 100%;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #333;
 }
 
-div#headerWrapper {
+#headerWrapper {
   grid-row-start: 1;
   color: #3d5ccd;
   background-color: lightblue;
@@ -394,11 +393,11 @@ nav ul li.active a {
   background-color: #dfe4f7;
 }
 
-div#mainWrapper {
+#mainWrapper {
   grid-row-start: 2;
 }
 
-div#footerWrapper {
+#footerWrapper {
   grid-row-start: 3;
   background-color: #3d5ccd;
 }
@@ -449,9 +448,6 @@ footer p {
   }
   div#footerWrapper {
     grid-row-start: 4;
-  }
-  div#headerWrapper, div#navWrapper, div#mainWrapper, div#footerWrapper {
-    height: auto;
   }
 }
 @media only screen and (min-width: 60rem) {

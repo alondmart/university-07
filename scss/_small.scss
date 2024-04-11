@@ -15,7 +15,7 @@ html {
 
 body {
     display: grid;
-    height: 100%;
+    // height: 100%;
     font-family: $defaultFont;
     font-weight: $normalWeight;
     color: $fontColor;
@@ -23,7 +23,7 @@ body {
 
 // HEADER STUFF
 
-div#headerWrapper {
+#headerWrapper {
     grid-row-start: 1;
     color: $primaryColor;
     background-color: lightblue;
@@ -83,13 +83,13 @@ nav {
 
 
 // MAIN STUFF
-div#mainWrapper {
+#mainWrapper {
     grid-row-start: 2;
 }
 
 
 // footer stuff start
-div#footerWrapper {
+#footerWrapper {
     grid-row-start: 3;
     background-color: $primaryColor;
 }
