@@ -25,6 +25,8 @@ header {
 // NAV STUFF HERE
 div#hamburger, div#closex {display: none;}
 
+div#navWrapper {border-bottom: 1px solid $cream;}
+
 nav {
    height: auto; //this overrides the 100vh from the small screen;
     ul {

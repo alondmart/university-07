@@ -485,6 +485,9 @@ footer p {
   div#hamburger, div#closex {
     display: none;
   }
+  div#navWrapper {
+    border-bottom: 1px solid #EEEBD3;
+  }
   nav {
     height: auto;
   }
